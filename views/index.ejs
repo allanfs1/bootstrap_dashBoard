@@ -78,8 +78,11 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-
+<ul class="nav nav-pills">
+    <li role="presentation" class="enable"><a href="http://localhost:3000/new">Painel</a></li>
+    <li role="presentation" class="disabled"><a href="#">Index</a></li>
+    <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+  </ul>
 <!-- Tabela de cdastro -->
 <div class="panel panel-default">
   <!-- Default panel contents -->
@@ -97,9 +100,9 @@
   <!-- Dados do Banco de Dados Mongo DB-->
   <tr>
     <% model.forEach(function(custon){ %>
-    <td><%= custon.bit %> </td>
+    <td><%= custon.cm %> </td>
     <td><%= custon.bit %></td> 
-    <td><%= custon.bit %></td>
+    <td><%= custon.motor %></td>
   </tr>
   <% }) %>
 </table>
